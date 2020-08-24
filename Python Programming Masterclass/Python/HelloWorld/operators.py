@@ -10,5 +10,17 @@ print(a % b)    # 0 modulo: the remainder after integer division
 print(type(a / b))
 print()
 
-for i in range(1, a // b): # here the integer division is used to force it to be an integer
-    print(i)
+print(a + b / 3 - 4 * 12)
+print(a + (b / 3) - (4 * 12))
+print((((a + b) / 3) - 4) * 12)
+print(((a + b) / 3 - 4) * 12)
+
+c = a + b
+d = c / 3
+e = d - 4
+print(e * 12)
+
+print()
+
+print(a / (b * a) / b)
+print(a / b * a / b)
