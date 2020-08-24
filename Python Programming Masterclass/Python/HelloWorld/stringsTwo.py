@@ -21,3 +21,14 @@ print(parrot[:-5] + parrot[-4:])
 print()
 print(parrot[-4:-2])
 print(parrot[-4:12])
+
+print()
+print(parrot[0:6:2]) # Nre
+print(parrot[0:6:3]) # Nw
+
+number = "9,423;456:292,747;327:272 849,939;535"
+seperators = number[1::4]
+print(seperators)
+
+values = "".join(char if char not in seperators else " " for char in number).split()
+print([int(val) for val in values])
