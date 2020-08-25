@@ -15,19 +15,6 @@ else:
         print("2nd time lucky")
     else:
         print("Failure")
-# # Exercise 48 Conditional Statements
-# if guess != answer:
-#     if guess < answer:
-#         print("Please guess higher")
-#     else:
-#         print("Please guess lower")
-#     guess = int(input())
-#     if guess == answer:
-#         print("You guessed it 2nd time")
-#     else:
-#         print("You failed this time")
-# else:
-#     print("Your guessed it first time")
 
 # print("Please guess a number between 1 & 10: ")
 # guess = int(input())
