@@ -1,18 +1,33 @@
 answer = 5
 print("Please guess a number between 1 & 10: ")
 guess = int(input())
-if guess != answer:
+
+# Exercise 48 Challenge
+if guess == answer:
+    print("You guessed it first time")
+else:
     if guess < answer:
-        print("Please guess higher")
+        print("Guess Higher")
     else:
-        print("Please guess lower")
+        print("guess lower")
     guess = int(input())
     if guess == answer:
-        print("You guessed it 2nd time")
+        print("2nd time lucky")
     else:
-        print("You failed this time")
-else:
-    print("Your guessed it first time")
+        print("Failure")
+# # Exercise 48 Conditional Statements
+# if guess != answer:
+#     if guess < answer:
+#         print("Please guess higher")
+#     else:
+#         print("Please guess lower")
+#     guess = int(input())
+#     if guess == answer:
+#         print("You guessed it 2nd time")
+#     else:
+#         print("You failed this time")
+# else:
+#     print("Your guessed it first time")
 
 # print("Please guess a number between 1 & 10: ")
 # guess = int(input())
