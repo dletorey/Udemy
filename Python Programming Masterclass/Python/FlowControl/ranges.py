@@ -19,19 +19,25 @@
 #     print("i is now {}".format(i))
 # print("-" * 10)
 
-#Part 2
-age = int(input("How old are you? "))
+# #Part 2
+# age = int(input("How old are you? "))
+#
+# # if age >= 16 and age <= 65:
+# # if 16 <= age <= 65:
+# if age in range(16, 66):
+#     print("Have a good day at work")
+# else:
+#     print("Enjoy your free time")
+#
+# print("-" * 80)
+#
+# if age < 16 or age > 65:
+#     print("Enjoy your free time")
+# else:
+#     print("Have a good day at work")
 
-# if age >= 16 and age <= 65:
-# if 16 <= age <= 65:
-if age in range(16, 66):
-    print("Have a good day at work")
-else:
-    print("Enjoy your free time")
-
-print("-" * 80)
-
-if age < 16 or age > 65:
-    print("Enjoy your free time")
-else:
-    print("Have a good day at work")
+#Coding Exercise 9 for loop with step
+# Write a program to print out all the numbers from 0 to 100 that are divisible by 7.
+# Note that zero is considered to be divisible by all other integers, so your output should include zero.
+for i in range(0, 100, 7):
+    print(i)
