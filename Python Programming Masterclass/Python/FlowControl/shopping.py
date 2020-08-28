@@ -1,17 +1,36 @@
 shopping_list = ["milk", "pasta", "eggs", "spam", "bread", "rice"]
 
-# steps through every item in the list and prints it
-for item in shopping_list:
-    print("Buy " + item)
-print("-" *15)
-# steps through every item in the list and prints it if it is not spam
-for item in shopping_list:
-    if item != "spam":
-        print("Buy " + item)
-print("-" *15)
-# steps through every item in the list if the item is equal to eggs it continues, ie skips eggs
+# # Exercise 63 continue
+# # steps through every item in the list and prints it
+# for item in shopping_list:
+#     print("Buy " + item)
+# print("-" *15)
+# # steps through every item in the list and prints it if it is not spam
+# for item in shopping_list:
+#     if item != "spam":
+#         print("Buy " + item)
+# print("-" *15)
+# # steps through every item in the list if the item is equal to eggs it continues, ie skips eggs
+# for item in shopping_list:
+#     if item == "eggs":
+#         continue
+#     print("Buy " + item)
+# print("-" *15)
+
+# Exercise 64 break
+
 for item in shopping_list:
     if item == "eggs":
-        continue
+        break # when the item is equal to eggs the loop will stop
     print("Buy " + item)
-print("-" *15)
+print("-" * 15)
+
+item_to_find = "spam"
+found_at = None
+
+for index in range(len(shopping_list)):
+    if shopping_list[index] == item_to_find:
+        found_at = index
+        break # this break will stop the loop once instance of item_to_find is reached, this could be left out if you wanted to find multiple indexes
+print("Item found at position {}".format(found_at))
+print("-" * 15)
