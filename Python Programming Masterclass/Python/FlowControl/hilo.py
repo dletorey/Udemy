@@ -25,4 +25,4 @@ while True:
     else:
         print("Please enter h, l or c")
     if high_low in allowed_chars:
-        guesses = guesses + 1
+        guesses += 1 # guesses = guesses + 1 updated this to make it an augmented assignment
