@@ -32,11 +32,8 @@ user_options = [
 # Refactoring to use in
 choice = 9
 valid_options = [1, 2, 3, 4]
-while True:
-    if choice == 0:
-        print("Goodbye")
-        break
-    elif choice in valid_options:
+while choice != 0:
+    if choice in valid_options:
         print("You choose", user_options[choice - 1])
         print("Choose another")
     else:
