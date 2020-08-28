@@ -4,27 +4,47 @@ user_options = [
                 "3 go dancing",
                 "4 go sky-diving"
                 ]
-print("Choose one of the following options:")
-for i in user_options:
-    print(i)
-print("0 exit")
-print()
+# print("Choose one of the following options:")
+# for i in user_options:
+#     print(i)
+# print("0 exit")
+# print()
+# while True:
+#     choice = int(input())
+#     if choice == 1:
+#         print("You choose", user_options[choice - 1])
+#         print("Choose another")
+#     elif choice == 2:
+#         print("You choose", user_options[choice - 1])
+#         print("Choose another")
+#     elif choice == 3:
+#         print("You choose", user_options[choice - 1])
+#         print("Choose another")
+#     elif choice == 4:
+#         print("You choose", user_options[choice - 1])
+#         print("Choose another")
+#     elif choice == 0:
+#         print("Goodbye")
+#         break
+#     else:
+#         print("You pressed {}. Please enter a valid option".format(choice))
+
+# Refactoring to use in
+choice = 9
+valid_options = [1, 2, 3, 4]
 while True:
-    choice = int(input())
-    if choice == 1:
-        print("You choose", user_options[choice - 1])
-        print("Choose another")
-    elif choice == 2:
-        print("You choose", user_options[choice - 1])
-        print("Choose another")
-    elif choice == 3:
-        print("You choose", user_options[choice - 1])
-        print("Choose another")
-    elif choice == 4:
-        print("You choose", user_options[choice - 1])
-        print("Choose another")
-    elif choice == 0:
+    if choice == 0:
         print("Goodbye")
         break
+    elif choice in valid_options:
+        print("You choose", user_options[choice - 1])
+        print("Choose another")
     else:
-        print("You pressed {}. Please enter a valid option".format(choice))
+        if choice != 9 or choice not in valid_options:
+            print("You pressed {}. Please enter a valid option".format(choice))
+        print("Choose one of the following options:")
+        for i in user_options:
+            print(i)
+        print("0 exit")
+        print()
+    choice = int(input())
