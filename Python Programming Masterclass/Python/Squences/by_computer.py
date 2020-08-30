@@ -2,7 +2,7 @@ current_choice = "-"
 computer_parts = [] # create an empty list to store the items
 
 while current_choice != '0':
-    if current_choice in "12345":
+    if current_choice in "123456":
         print("Adding {}, to computer shopping list".format(current_choice))
         if current_choice == "1":
             computer_parts.append("computer")
@@ -14,6 +14,8 @@ while current_choice != '0':
             computer_parts.append("mouse")
         elif current_choice == "5":
             computer_parts.append("mousemat")
+        elif current_choice == "6":
+            computer_parts.append("hdmi cable")
     else:
         print("Please add options from the list below:")
         print("1:\tcomputer")
@@ -21,6 +23,7 @@ while current_choice != '0':
         print("3:\tkeyboard")
         print("4:\tmouse")
         print("5:\tmouse mat")
+        print("6:\thdmi cable")
         print("0:\tto finish")
     current_choice = input()
 print(computer_parts)
