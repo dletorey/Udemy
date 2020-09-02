@@ -19,8 +19,12 @@ while current_choice != '0':
     if current_choice in valid_choices:
         index = int(current_choice) -1
         chosen_part = available_parts[index]
-        computer_parts.append(chosen_part)
-        print("Adding {}, to computer shopping list".format(chosen_part))
+        if chosen_part in computer_parts:
+            # it's already in the list, so remove it
+            computer_parts.remove(chosen_part)
+        else:
+            computer_parts.append(chosen_part)
+        print("Your list now includes {}.".format(computer_parts))
         # print("Adding {}, to computer shopping list".format(current_choice))
         # if current_choice == "1":
         #     computer_parts.append("computer")
