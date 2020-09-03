@@ -29,3 +29,14 @@ for index, value in enumerate(data):
 print(stop) # for debugging
 del data[:stop]
 print(data)
+
+# process high values in the list
+start = 0
+for index in range(len(data) -1, -1, -1):
+    # print(index)
+    if data[index] <= max_valid:
+        start = index + 1 # this is because the index will be the first value in the range
+        break
+print(start) # for debugging
+del data[start:]
+print(data)
