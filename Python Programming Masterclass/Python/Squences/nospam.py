@@ -11,7 +11,7 @@ menu = [
 for meal in menu:
     for item in meal:
         if "spam" != item:
-            print(item)
+            print(item, end=' ')
     print()
 # solution 1
 for meal in menu:
