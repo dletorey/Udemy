@@ -77,4 +77,4 @@ albums = [("Orbital \(aka Green\)", "Orbital", 1991,
                (4, "Kentish Town Waltz"),
            ]
            ),
-          ]
+]
