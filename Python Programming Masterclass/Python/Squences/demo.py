@@ -1,4 +1,4 @@
-albums = [("Orbital \(aka Green\)", "Orbital", 1991,
+albums = [("Orbital (aka Green)", "Orbital", 1991,
            [
                (1, "The Moebius", "7:01"),
                (2, "Speed Freak", "7:16"),
@@ -13,7 +13,7 @@ albums = [("Orbital \(aka Green\)", "Orbital", 1991,
                (11, "I Think It's Disgusting (Outro)", "0:51"),
            ]
            ),
-          ("Orbital \(aka Brown\)", "Orbital", 1991,
+          ("Orbital (aka Brown)", "Orbital", 1991,
            [
                (1, "Time Becomes", "1:43"),
                (2, "Planet of the Shapes", "9:36"),
@@ -31,13 +31,13 @@ albums = [("Orbital \(aka Green\)", "Orbital", 1991,
            [
                (1, "Forever", "7:59"),
                (2, "I Wish I Had Duck Feet", "4:05"),
-               (3, "Sad But True \(featuring Alison Goldfrapp\)", "7:49"),
+               (3, "Sad But True (featuring Alison Goldfrapp)", "7:49"),
                (4, "Crash and Carry", "4:43"),
                (5, "Science Friction", "5:03"),
                (6, "Philosophy by Numbers", "6:39"),
                (7, "Kein Trink Wasser", "9:24"),
                (8, "Quality Seconds", "1:25"),
-               (9, "Are We Here? \(featuring Alison Goldfrapp\)", "15:33"),
+               (9, "Are We Here? (featuring Alison Goldfrapp)", "15:33"),
                (10, "Attached", "12:25"),
            ]
            ),("Welcome to my Nightmare", "Alice Cooper", 1975,
