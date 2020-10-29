@@ -22,7 +22,7 @@ while guess != answer:
         print("Guess Higher")
     elif guess > answer:
         print("Guess Lower")
-    guess = int(input("Keep guessing or use 0 to quit "))
+    print("Keep guessing or use 0 to quit ")
 if guess == 0:
     print("You quit the game")
 else:
