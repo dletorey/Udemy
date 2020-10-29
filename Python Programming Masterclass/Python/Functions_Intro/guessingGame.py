@@ -20,6 +20,12 @@ def get_integer(prompt):
             print("'{}' is not a valid number".format(temp))
 
 
+print(input.__doc__)
+print("*" * 80)
+print(get_integer.__doc__)
+print("*" * 80)
+
+
 highest = 10 # sets the highest possible number and makes it easy to change in one spot, here
 answer = random.randint(1, highest) # generates a random nuber between 1 and highest using randint from the random module imported
 print("the correct answer is {}".format(answer)) # TODO remove this later this is only for testing
