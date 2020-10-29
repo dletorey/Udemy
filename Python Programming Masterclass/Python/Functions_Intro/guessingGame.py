@@ -11,10 +11,11 @@ highest = 10 # sets the highest possible number and makes it easy to change in o
 answer = random.randint(1, highest) # generates a random nuber between 1 and highest using randint from the random module imported
 print("the correct answer is {}".format(answer)) # TODO remove this later this is only for testing
 print("Please guess a number between 1 & {}, to quit type 0: ".format(highest))
-guess = int(input())
+guess = 0
 
 #Exercise 69 Challenge
 while guess != answer:
+    guess = get_integer(": ")
     if guess == 0:
         break
     elif guess < answer:
