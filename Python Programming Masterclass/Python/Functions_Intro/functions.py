@@ -1,4 +1,10 @@
-def multiply(x, y):
+def multiply(x: float, y: float) -> float:
+    """
+    Takes 2 numbers `x` and `y` and returns that value when multiplied
+    :param x: first number to be multiplied
+    :param y: number to be multiplied by x
+    :return: value of x times y
+    """
     result = x * y
     return result
 
