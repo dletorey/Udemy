@@ -9,6 +9,14 @@ def get_integer(prompt):
 
 screen_width = get_integer("How wide is your width: ")
 def banner_text(text: str = " ") -> None:
+    """
+    Takes a string and if it is a * returns `screen_width` many *s,
+    if the `text` string is empty uses the default value of ' ',
+    otherwise it centers `text` in between 2 *s
+    :param text: a string to be wrapped in the center of stars
+    :return: None
+    :raises ValueError: If the length of text is longer than screen_width
+    """
 
     if len(text) > screen_width - 4:
         # print("EEK!!")
@@ -20,6 +28,7 @@ def banner_text(text: str = " ") -> None:
     else:
         output_string = "**{0}**".format(text.center(screen_width - 4))
         print(output_string)
+
 
 banner_text("*")
 banner_text("I know that I've imagined love before")
