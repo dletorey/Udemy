@@ -14,7 +14,6 @@ def palindrome_sentence(string):
 
 
 sentence = input("Please enter a sentence to check if it's a palindrome")
-
 if palindrome_sentence(sentence):
     print("'{}' is a palindrome".format(sentence))
 else:
