@@ -1,9 +1,10 @@
 def banner_text(text):
-    screen_width = 80
+    screen_width = 20
     if len(text) > screen_width - 4:
-        print("EEK!!")
-        print("The Text is too long to fit in the spefied width")
-
+        # print("EEK!!")
+        # print("The Text is too long to fit in the spefied width")
+        raise ValueError("String '{0}' is longer than the specified width of {1}"
+                         .format(text, screen_width))
     if text == "*":
         print("*" * screen_width)
     else:
@@ -18,7 +19,7 @@ banner_text("How can you have a day without a night?")
 banner_text("You're the book that I have opened")
 banner_text("And now I've got to know much more")
 banner_text("The curiousness of your potential kiss")
-banner_text(" ")
+banner_text(" ")                                                   
 banner_text("Has got my mind and body aching")
 banner_text("Really hurt me, baby, really cut me, baby")
 banner_text("How can you have a day without a night?")
