@@ -1,9 +1,14 @@
+def is_palindrome(string):
+    return string[::-1].casefold() == string.casefold()
+
+
 def palindrome_sentence(string):
     characterless = ""
     for i in string:
         if i.isalnum():
             characterless += str(i)
-    return characterless[::-1].casefold() == characterless.casefold()
+    # return characterless[::-1].casefold() == characterless.casefold()
+    return is_palindrome(characterless)
 
 
 
