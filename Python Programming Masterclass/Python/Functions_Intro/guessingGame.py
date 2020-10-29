@@ -6,8 +6,9 @@ def get_integer(prompt):
         temp = input(prompt)
         if temp.isnumeric():
             return int(temp)
-        else:
+        else: # the else is not really needed as if it is valid teh return will break out although the next line would need the indent removed
             print("'{}' is not a valid number".format(temp))
+
 
 highest = 10 # sets the highest possible number and makes it easy to change in one spot, here
 answer = random.randint(1, highest) # generates a random nuber between 1 and highest using randint from the random module imported
