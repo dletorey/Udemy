@@ -8,7 +8,7 @@ def get_integer(prompt):
 
 
 screen_width = get_integer("How wide is your width: ")
-def banner_text(text):
+def banner_text(text=" "):
 
     if len(text) > screen_width - 4:
         # print("EEK!!")
@@ -29,7 +29,7 @@ banner_text("How can you have a day without a night?")
 banner_text("You're the book that I have opened")
 banner_text("And now I've got to know much more")
 banner_text("The curiousness of your potential kiss")
-banner_text(" ")                                                   
+banner_text()
 banner_text("Has got my mind and body aching")
 banner_text("Really hurt me, baby, really cut me, baby")
 banner_text("How can you have a day without a night?")
