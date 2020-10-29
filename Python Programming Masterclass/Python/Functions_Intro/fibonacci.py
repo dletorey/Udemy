@@ -1,4 +1,4 @@
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     """
     Return the `n`th Fibonacci number , for positive `n`.
     :param n: The fibonacci number the user wants

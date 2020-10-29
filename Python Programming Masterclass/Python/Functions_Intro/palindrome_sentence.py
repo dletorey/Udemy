@@ -1,4 +1,4 @@
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     """
     Takes a string to see if it a palindrome,
         the same forward as backward
@@ -9,7 +9,7 @@ def is_palindrome(string):
     return string[::-1].casefold() == string.casefold()
 
 
-def palindrome_sentence(string):
+def palindrome_sentence(string: str) -> bool:
     """
     Takes a `String` and checks each character to see if it is a number or letter,
         and if it is adds it to a new string called characterless.
