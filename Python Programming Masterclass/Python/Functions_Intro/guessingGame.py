@@ -1,5 +1,12 @@
 import random #imports the random module
 
+
+def get_integer(prompt):
+    while True:
+        temp = input(prompt)
+        if temp.isnumeric():
+            return int(temp)
+
 highest = 10 # sets the highest possible number and makes it easy to change in one spot, here
 answer = random.randint(1, highest) # generates a random nuber between 1 and highest using randint from the random module imported
 print("the correct answer is {}".format(answer)) # TODO remove this later this is only for testing
