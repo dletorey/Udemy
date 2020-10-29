@@ -8,7 +8,7 @@ def get_integer(prompt):
 
 
 screen_width = get_integer("How wide is your width: ")
-def banner_text(text=" "):
+def banner_text(text: str = " ") -> None:
 
     if len(text) > screen_width - 4:
         # print("EEK!!")
