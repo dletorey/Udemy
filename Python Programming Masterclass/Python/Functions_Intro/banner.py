@@ -1,5 +1,15 @@
+def get_integer(prompt):
+    while True:
+        temp = input(prompt)
+        if temp.isnumeric():
+            return int(temp)
+        else:
+            print("'{}' is not a valid number".format(temp))
+
+
+screen_width = get_integer("How wide is your width: ")
 def banner_text(text):
-    screen_width = 20
+
     if len(text) > screen_width - 4:
         # print("EEK!!")
         # print("The Text is too long to fit in the spefied width")
