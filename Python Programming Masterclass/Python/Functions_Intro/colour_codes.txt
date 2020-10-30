@@ -1,6 +1,6 @@
 # Some ANSI escape sequences for colours and effects
-BLACK = '\u001b[30m'
 RED = '\u001b[31m'
+BLACK = '\u001b[30m'
 GREEN = '\u001b[32m'
 YELLOW = '\u001b[33m'
 BLUE = '\u001b[34m'
